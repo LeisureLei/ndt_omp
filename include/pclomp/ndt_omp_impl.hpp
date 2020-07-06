@@ -818,8 +818,8 @@ pclomp::NormalDistributionsTransform<PointSource, PointTarget>::computeStepLengt
   bool interval_converged = (step_max - step_min) < 0, open_interval = true;
 
   double a_t = step_init;
-  a_t = std::min (a_t, step_max);
-  a_t = std::max (a_t, step_min);
+  // a_t = std::min (a_t, step_max);
+  // a_t = std::max (a_t, step_min);
 
   x_t = x + step_dir * a_t;
 
